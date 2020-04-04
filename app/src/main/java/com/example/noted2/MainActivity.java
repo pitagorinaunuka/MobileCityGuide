@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                // retrieve the data and replace layout
+                // get the data and replace layout
                 for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
                     MyNoted p = dataSnapshot1.getValue(MyNoted.class);
