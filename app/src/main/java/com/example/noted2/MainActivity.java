@@ -60,13 +60,14 @@ public class MainActivity extends AppCompatActivity {
 
         // get the data from firebase
         reference = FirebaseDatabase.getInstance().getReference().child("Noted2");
+
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // get the data and replace layout
                 for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
-                    MyNoted p = dataSnapshot1.getValue(MyNoted.class);
+                    MyNoted p = dataSnapshot.getValue(MyNoted.class);
                     list.add(p);
                 }
                 notedAdapter = new NotedAdapter(MainActivity.this, list);

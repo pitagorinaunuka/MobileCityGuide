@@ -1,6 +1,7 @@
 package com.example.noted2;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -34,6 +35,24 @@ public class NotedAdapter extends RecyclerView.Adapter<NotedAdapter.MyViewHolder
         myViewHolder.descnoted.setText(myNoted.get(i).getDescnoted());
         myViewHolder.datenoted.setText(myNoted.get(i).getDatenoted());
 
+        final String getTitleNoted = myNoted.get(i).getTitlenoted();
+        final String getDescNoted = myNoted.get(i).getDescnoted();
+        final String getDateNoted = myNoted.get(i).getDatenoted();
+        final String getKeyNote = myNoted.get(i).getKeynote();
+
+
+        myViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent aa = new Intent(context, EditTask.class);
+                aa.putExtra("titlenoted", getTitleNoted);
+                aa.putExtra("descnoted", getDescNoted);
+                aa.putExtra("datenoted", getDateNoted);
+                aa.putExtra("keynote", getKeyNote);
+                context.startActivity(aa);
+            }
+        });
+
     }
 
     @Override
@@ -44,13 +63,14 @@ public class NotedAdapter extends RecyclerView.Adapter<NotedAdapter.MyViewHolder
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView titlenoted, descnoted, datenoted;
+        TextView titlenoted, descnoted, datenoted, keynote;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             titlenoted = (TextView) itemView.findViewById(R.id.titlenoted);
             descnoted = (TextView) itemView.findViewById(R.id.descnoted);
             datenoted = (TextView) itemView.findViewById(R.id.datenoted);
+
 
         }
     }

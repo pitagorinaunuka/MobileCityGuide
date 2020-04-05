@@ -24,6 +24,7 @@ public class NewTaskActivity extends AppCompatActivity {
     Button btnSaveTask, btnCancel;
     DatabaseReference reference;
     Integer notedNum = new Random().nextInt();
+    String keynote = Integer.toString(notedNum);
 
 
     @Override
@@ -59,6 +60,7 @@ public class NewTaskActivity extends AppCompatActivity {
                         dataSnapshot.getRef().child("titlenote").setValue(titlenoted.getText().toString());
                         dataSnapshot.getRef().child("descnote").setValue(descnoted.getText().toString());
                         dataSnapshot.getRef().child("datenote").setValue(datenoted.getText().toString());
+                        dataSnapshot.getRef().child("keynote").setValue(keynote);
 
                         Intent a = new Intent(NewTaskActivity.this, MainActivity.class);
                         startActivity(a);
