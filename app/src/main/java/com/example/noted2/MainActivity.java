@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -67,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
                 // get the data and replace layout
                 for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
-                    MyNoted p = dataSnapshot.getValue(MyNoted.class);
+                    Log.v("\n\nSNAPSHOT_1_LOG::\n\n", dataSnapshot1.toString());
+                    MyNoted p = dataSnapshot1.getValue(MyNoted.class);
                     list.add(p);
                 }
                 notedAdapter = new NotedAdapter(MainActivity.this, list);

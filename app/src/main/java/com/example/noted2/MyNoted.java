@@ -1,20 +1,23 @@
 package com.example.noted2;
 
+import android.util.Log;
+
 public class MyNoted {
 
-    String titlenoted;
-    String datenoted;
-    String descnoted;
+    String titlenote;
+    String datenote;
+    String descnote;
     String keynote;
 
 
     public MyNoted() {
+        Log.d("\n\nLOG_TEST", "TEST1");
     }
 
     public MyNoted(String titlenoted, String datenoted, String descnoted, String keynote) {
-        this.titlenoted = titlenoted;
-        this.datenoted = datenoted;
-        this.descnoted = descnoted;
+        this.titlenote = titlenoted;
+        this.datenote = datenoted;
+        this.descnote = descnoted;
         this.keynote = keynote;
     }
 
@@ -28,30 +31,30 @@ public class MyNoted {
 
     public String getTitlenoted() {
 
-        return titlenoted;
+        return titlenote;
     }
 
     public void setTitlenoted(String titlenoted) {
-        this.titlenoted = titlenoted;
+        this.titlenote = titlenoted;
     }
 
     public String getDatenoted() {
 
-        return datenoted;
+        return datenote;
     }
 
     public void setDatenoted(String datenoted) {
 
-        this.datenoted = datenoted;
+        this.datenote = datenoted;
     }
 
     public String getDescnoted() {
 
-        return descnoted;
+        return descnote;
     }
 
     public void setDescnoted(String descnoted) {
 
-        this.descnoted = descnoted;
+        this.descnote = descnoted;
     }
 }
