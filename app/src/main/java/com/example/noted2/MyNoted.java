@@ -4,10 +4,10 @@ import android.util.Log;
 
 public class MyNoted {
 
-    String titlenote;
-    String datenote;
-    String descnote;
-    String keynote;
+    public String titlenote;
+    public String datenote;
+    public String descnote;
+    public String keynote;
 
 
     public MyNoted() {
