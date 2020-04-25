@@ -39,9 +39,9 @@
                 <TextView
                     android:id="@+id/subtitlepage"
                     android:textSize="18sp"
-                    android:textColor="#4A4E6A"
+                    android:textColor="@color/textWhiteColor"
                     android:layout_marginTop="8dp"
-                    android:text="Finish all tasks"
+                    android:text="All your notes in one focus"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -68,7 +68,7 @@
         <View
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:background="#131E69"
+            android:background="#FFC431"
             android:layout_height="1dp"/>
 
     </LinearLayout>

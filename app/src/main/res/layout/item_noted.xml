@@ -43,7 +43,7 @@
         <TextView
             android:id="@+id/datenoted"
             android:textSize="18sp"
-            android:textColor="#F63EA5"
+            android:textColor="#FFC431"
             android:layout_marginTop="8dp"
             android:text="Tomorrow"
             android:layout_width="wrap_content"
