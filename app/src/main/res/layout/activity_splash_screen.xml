@@ -21,6 +21,21 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toLTopOf="parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep personal list for things that matter."
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textColor="@color/textWhiteColor"
+        android:layout_marginBottom="265dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
     <Button
         android:id="@+id/sign_btn"
         android:layout_width="wrap_content"
