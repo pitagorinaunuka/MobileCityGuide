@@ -13,8 +13,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     Handler handler;
     ImageView splashImg;
-    TextView splashText;
-    Button startBtn, signBtn;
+    Button startBtn, logBtn, signBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +21,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         splashImg = findViewById(R.id.splash_img);
-        splashText = findViewById(R.id.splashText);
-        signBtn = findViewById(R.id.sign_btn);
         startBtn = findViewById(R.id.start_btn);
+        logBtn = findViewById(R.id.log_btn);
+        signBtn = findViewById(R.id.sign_btn);
+
 
         ((View) startBtn).setOnClickListener(new View.OnClickListener() {
             @Override
