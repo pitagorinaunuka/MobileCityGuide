@@ -34,12 +34,29 @@ public class SplashScreenActivity extends AppCompatActivity {
             }
         });
 
-        handler=new Handler();
 
+        ((View) logBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent l = new Intent(SplashScreenActivity.this, LogInActivity.class);
+                startActivity(l);
+            }
+        });
+
+        ((View) signBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent s = new Intent(SplashScreenActivity.this, SingInActivity.class);
+                startActivity(s);
+            }
+        });
+
+
+        handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(SplashScreenActivity.this,MainActivity.class);
+                Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
