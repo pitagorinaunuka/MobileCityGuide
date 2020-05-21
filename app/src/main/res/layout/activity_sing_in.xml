@@ -27,9 +27,9 @@
 
 
     <EditText
-        android:id="@+id/name_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/name_sign_input"
+        android:layout_width="251dp"
+        android:layout_height="45dp"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,14 +37,20 @@
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="270dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:ems="10" />
+        android:ems="10"
+        android:hint="Name and Surname"
+        android:inputType="text"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#B5B5B5"
+        android:background="@drawable/bginputtask"
+        android:paddingLeft="12dp"/>
 
 
 
     <EditText
-        android:id="@+id/email_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/email_sign_input"
+        android:layout_width="251dp"
+        android:layout_height="45dp"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,14 +58,20 @@
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="211dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:ems="10" />
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#B5B5B5"
+        android:background="@drawable/bginputtask"
+        android:paddingLeft="12dp"/>
 
 
 
     <EditText
-        android:id="@+id/pass_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/pass_sign_input"
+        android:layout_width="251dp"
+        android:layout_height="45dp"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,17 +79,22 @@
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="152dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:ems="10" />
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#B5B5B5"
+        android:background="@drawable/bginputtask"
+        android:paddingLeft="12dp"/>
 
 
     <Button
         android:id="@+id/sign_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
+        android:layout_width="251dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/button3"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintBottom_creator="1"
@@ -91,7 +108,6 @@
         android:text="Already have an account? Log in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
