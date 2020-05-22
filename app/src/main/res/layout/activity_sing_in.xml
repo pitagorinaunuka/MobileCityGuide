@@ -27,27 +27,6 @@
 
 
     <EditText
-        android:id="@+id/name_sign_input"
-        android:layout_width="251dp"
-        android:layout_height="45dp"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="270dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:ems="10"
-        android:hint="Name and Surname"
-        android:inputType="text"
-        android:textColor="@color/colorAccent"
-        android:textColorHint="#B5B5B5"
-        android:background="@drawable/bginputtask"
-        android:paddingLeft="12dp"/>
-
-
-
-    <EditText
         android:id="@+id/email_sign_input"
         android:layout_width="251dp"
         android:layout_height="45dp"

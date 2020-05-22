@@ -13,7 +13,7 @@ public class SingInActivity extends AppCompatActivity {
 
 
     ImageView splashImg;
-    EditText nameInput, emailInput, passInput;
+    EditText emailInput, passInput;
     Button signInBtn;
     TextView backBtn;
 
@@ -24,9 +24,8 @@ public class SingInActivity extends AppCompatActivity {
 
 
         splashImg = findViewById(R.id.splash_img);
-        nameInput = findViewById(R.id.name_input);
-        emailInput = findViewById(R.id.email_input);
-        passInput = findViewById(R.id.pass_input);
+        emailInput = findViewById(R.id.email_sign_input);
+        passInput = findViewById(R.id.pass_sign_input);
         signInBtn = findViewById(R.id.sign_btn);
         backBtn = findViewById(R.id.back_sign_text);
 
@@ -38,6 +37,16 @@ public class SingInActivity extends AppCompatActivity {
                 startActivity(b1);
             }
         });
+
+
+        ((View) splashImg).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent b1 = new Intent(SingInActivity.this, SplashScreenActivity.class);
+                startActivity(b1);
+            }
+        });
+
 
     }
 }
